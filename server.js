@@ -3,15 +3,15 @@ const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-require('./model/subscribers_model');
+require('model/subscribers_model');
 
 // Load Routes
-const index = require('./router');
-const push = require('./router/push');
-const subscribe = require('./router/subscribe');
-// const categories = require('./routes/categories');
+const index = require('router');
+const push = require('router/push');
+const subscribe = require('router/subscribe');
+// const categories = require('routes/categories');
 // Load Keys
-const keys = require('./config/keys');
+const keys = require('config/keys');
 //Handlebars Helpers
 
 mongoose.Promise = global.Promise;
